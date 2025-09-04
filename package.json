@@ -6,6 +6,7 @@
     "scripts": {
         "start": "node backend/server.js",
         "start-dev": "nodemon backend/server.js",
+        "build": "echo 'Build completed'",
         "test": "mocha tests/*.js",
         "lint": "npx prettier --write ."
     },
