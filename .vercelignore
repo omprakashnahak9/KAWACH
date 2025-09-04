@@ -1,0 +1,16 @@
+node_modules
+.env
+.env.local
+.env.production.local
+.env.development.local
+tests/
+*.log
+.DS_Store
+.vscode/
+.idea/
+*.md
+README.md
+.git/
+.gitignore
+.prettierignore
+.prettierrc.js
