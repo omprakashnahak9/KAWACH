@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAWACH C2C - Secure Video Calls</title>
+    <meta name="description" content="KAWACH C2C - Military-grade encrypted video calls with zero data collection. Secure, private, and cross-platform communication.">
+    <meta name="keywords" content="secure video calls, encrypted communication, privacy, WebRTC, end-to-end encryption">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://c2c.mirotalk.com">
+    <meta property="og:title" content="KAWACH C2C - Secure Video Calls">
+    <meta property="og:description" content="Military-grade encrypted video calls with zero data collection">
+    <meta property="og:image" content="https://c2c.mirotalk.com/images/kawach-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://c2c.mirotalk.com">
+    <meta property="twitter:title" content="KAWACH C2C - Secure Video Calls">
+    <meta property="twitter:description" content="Military-grade encrypted video calls with zero data collection">
+    <meta property="twitter:image" content="https://c2c.mirotalk.com/images/kawach-preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/landing.css">
+    <link rel="stylesheet" href="../css/common.css">
+    
+    <!-- Analytics -->
+    <script async src="../js/umami.js"></script>
+    <script type="module" src="../js/landing.js"></script>
+</head>
+<body>
+    <!-- WebGL Background Canvas -->
+    <canvas id="webgl-canvas"></canvas>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>KAWACH</span>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#security" class="nav-link">Security</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="/home" class="nav-link nav-cta">Start Call</a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="scroll-progress" id="scrollProgress"></div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Secure Communication with
+                        <span class="highlight">Military-Grade Encryption</span>
+                    </h1>
+                    <p class="hero-description">
+                        KAWACH provides end-to-end encrypted video calls with zero data collection. 
+                        Your privacy is our priority - all communications stay between you and your participants.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="/home" class="btn btn-primary">
+                            <i class="fas fa-video"></i>
+                            Start Video Call
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <i class="fas fa-lock"></i>
+                            <span>100% Encrypted</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-user-secret"></i>
+                            <span>Zero Data Collection</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-globe"></i>
+                            <span>Cross-Platform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Powerful Features for Secure Communication</h2>
+                    <p>Everything you need for private, secure video calls</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Military-Grade Encryption</h3>
+                        <p>End-to-end encryption ensures your conversations remain completely private and secure.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>Zero Data Collection</h3>
+                        <p>We don't store, track, or collect any of your personal data or conversation content.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Screen Sharing</h3>
+                        <p>Share your screen securely for presentations, collaboration, or technical support.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Local Recording</h3>
+                        <p>Record calls locally on your device - no cloud storage, complete control over your data.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Secure Chat</h3>
+                        <p>Encrypted text messaging during calls with file sharing capabilities.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Cross-Platform</h3>
+                        <p>Works seamlessly across all devices and browsers - no downloads required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section id="security" class="security">
+            <div class="container">
+                <div class="security-content">
+                    <div class="security-text">
+                        <h2>Your Privacy is Our Priority</h2>
+                        <p class="security-intro">
+                            KAWACH C2C is built with security-first principles, ensuring your communications 
+                            remain private and protected at all times.
+                        </p>
+                        <div class="security-features">
+                            <div class="security-item">
+                                <i class="fas fa-lock"></i>
+                                <div>
+                                    <h4>End-to-End Encryption</h4>
+                                    <p>All communications are encrypted before leaving your device</p>
+                                </div>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-server"></i>
+                                <div>
+                                    <h4>No Server Storage</h4>
+                                    <p>Calls are peer-to-peer, nothing is stored on our servers</p>
+                                </div>
+                            </div>
+                            <div class="security-item">
+                                <i class="fas fa-eye-slash"></i>
+                                <div>
+                                    <h4>No Tracking</h4>
+                                    <p>We don't track, monitor, or analyze your conversations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="security-visual">
+                        <div class="encryption-demo">
+                            <div class="device">
+                                <i class="fas fa-laptop"></i>
+                                <span>Your Device</span>
+                            </div>
+                            <div class="encryption-flow">
+                                <div class="flow-line"></div>
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Encrypted</span>
+                            </div>
+                            <div class="device">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Recipient</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p>Get started with secure video calls in three simple steps</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Create or Join Room</h3>
+                            <p>Enter a room name and your display name to create or join a secure video call room.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Share Room Link</h3>
+                            <p>Share the room link with participants. All communications are automatically encrypted.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Start Secure Call</h3>
+                            <p>Begin your encrypted video call with screen sharing, chat, and recording capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Secure Video Calls?</h2>
+                    <p>Join thousands of users who trust KAWACH C2C for their private communications.</p>
+                    <a href="/home" class="btn btn-primary btn-large">
+                        <i class="fas fa-video"></i>
+                        Start Your First Call
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>KAWACH C2C</span>
+                        </div>
+                        <p>Secure, private, end-to-end encrypted video calls for everyone.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Features</h4>
+                        <ul>
+                            <li><a href="#features">End-to-End Encryption</a></li>
+                            <li><a href="#features">Screen Sharing</a></li>
+                            <li><a href="#features">Local Recording</a></li>
+                            <li><a href="#features">Secure Chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Security</h4>
+                        <ul>
+                            <li><a href="#security">Zero Data Collection</a></li>
+                            <li><a href="#security">No Server Storage</a></li>
+                            <li><a href="#security">Military-Grade Encryption</a></li>
+                            <li><a href="#security">Privacy First</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Get Started</h4>
+                        <ul>
+                            <li><a href="/home">Start Video Call</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="https://github.com/miroslavpejic85/mirotalkc2c">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 KAWACH C2C. All rights reserved. Built with privacy in mind.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
